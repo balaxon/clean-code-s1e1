@@ -20,7 +20,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { 
     text-align: center;
@@ -38,6 +38,7 @@
   width: 56%;
   display: inline-block;
   flex-grow: 1;
+  
 }
 
 .top-section__task-row-wrapper {
@@ -70,13 +71,13 @@ button {
 }
 
 button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
 
 h3,
-label[for="top-section__new-task"] {
+.top-section__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +87,8 @@ label[for="top-section__new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.edit-text,
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,13 +101,14 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.edit-text:focus,
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
 
-label[for="top-section__new-task"] {
+.top-section__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -125,22 +128,22 @@ li {
   align-items: center;
 }
 
-li > * {
+li {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.li-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li >  input[type="text"] {
+.edit-text {
   width: 226px;
 }
 
@@ -162,15 +165,15 @@ li >  input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.edit-text {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.edit-mode__label {
   display: none;
 }

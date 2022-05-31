@@ -3,7 +3,7 @@
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body id="page">
     <header class="header">
@@ -14,7 +14,7 @@
       <section id="top-section">
         <label class="top-section__label" for="top-section__new-task">Add Item</label>
         <div class="top-section__task-row-wrapper">
-          <input id="top-section__new-task"class="task" type="text">
+          <input id="top-section__new-task" class="task input-text" type="text">
           <button class="top-section__button">Add</button>
         </div>
       </section>
@@ -22,18 +22,18 @@
         <h3 class="main-todo__header">Todo</h3>
         <ul id="in-complete-tasks">
           <li class="main-todo__normal-mode">
-            <input class="main-todo__checkbox" type="checkbox">
-            <label class="main-todo__task task">Pay Bills</label>
-            <input type="text" class="main-todo__task task">
+            <input class="main-todo__checkbox checkbox" type="checkbox">
+            <label class="main-todo__task li-label task">Pay Bills</label>
+            <input type="text" class="main-todo__input edit-text task">
             <button class="main-todo__edit edit">Edit</button>
             <button class="main-todo__delete delete">
               <img class="main-todo__image" src="./remove.svg" alt="Remove icon">
             </button>
           </li>
           <li class="edit-mode">
-            <input class="main-todo__checkbox" type="checkbox">
-            <label class="main-todo__task task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="main-todo__task task">
+            <input class="main-todo__checkbox checkbox" type="checkbox">
+            <label class="main-todo__task edit-mode__label li-label task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="main-todo__input edit-mode__input edit-text task">
             <button class="main-todo__edit edit">Save</button>
             <button class="main-todo__delete delete">
               <img class="main-todo__image" src="./remove.svg" alt="Remove icon">
@@ -45,9 +45,9 @@
         <h3 class="complete-todo__header">Completed</h3>
         <ul id="completed-tasks">
           <li class="complete-todo__li">
-            <input class="complete-todo__checkbox" type="checkbox" checked>
-            <label class="complete-todo__task task">See the Doctor</label>
-            <input type="text" class="complete-todo__task task">
+            <input class="complete-todo__checkbox checkbox" type="checkbox" checked>
+            <label class="complete-todo__task li-label task">See the Doctor</label>
+            <input type="text" class="complete-todo__input edit-text task">
             <button class="complete-todo__edit edit">Edit</button>
             <button class="complete-todo__delete delete">
               <img class="complete-todo__image" src="./remove.svg" alt="Remove icon">
